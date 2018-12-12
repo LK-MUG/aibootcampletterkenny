@@ -54,7 +54,7 @@ function register($form) {
     url: $form.attr('action'),
     data: $form.serialize(),
     cache: false,
-    dataType: 'json',
+    dataType: 'jsonp',
     contentType: 'application/json; charset=utf-8',
     error: function (err) { alert('Could not connect to the registration server. Please try again later.') },
     success: function (data) {
